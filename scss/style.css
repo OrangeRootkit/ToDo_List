@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+  font-family: Inter, "Times New Roman", Times, serif;
+  font-weight: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #54595E;
+}
+
+button,
+button:active,
+button:focus {
+  border: none;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 33px;
+  color: #000;
+}
+
+.card {
+  width: 594px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+  font-weight: 16px;
+  border-radius: 16px;
+}
+.card .input-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px 16px 0 0;
+  padding: 24px 24px 25px 24px;
+  border-bottom: 1px solid #DEE2E6;
+}
+.card .input-block .input {
+  display: block;
+  width: 356px;
+  height: 38px;
+  padding: 9px 0 8px 13.56px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+.card .input-block .input::-moz-placeholder {
+  color: #54595E;
+}
+.card .input-block .input:-ms-input-placeholder {
+  color: #54595E;
+}
+.card .input-block .input::placeholder {
+  color: #54595E;
+}
+.card .input-block .button-add {
+  width: 166px;
+  height: 39px;
+  background-color: #272829;
+}
+.card .task-block {
+  display: flex;
+  align-items: center;
+  padding: 32px 24px;
+  justify-content: space-between;
+}
+.card .task-block .task__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+}
+.card .task-block .toggle-checkbox {
+  display: block;
+  border: 1px solid #ABB5BE;
+  border-radius: 2px;
+}
+.card .task-block .toggle-checkbox:hover {
+  cursor: pointer;
+}
+.card .task-block .toggle__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .task-block .toggle-text {
+  padding-left: 16px;
+  width: 100%;
+  align-items: center;
+}
+.card .task-block .toggle-text-checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.card .task-block .toggle-x {
+  display: flex;
+  justify-self: baseline;
+}
+.card .task-block .toggle-x:hover {
+  cursor: pointer;
+}
+.card .delete-block {
+  display: flex;
+  padding: 18px 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px 0px 16px 16px;
+  background-color: #F5F5F5;
+}
+.card .delete-block .delete-complete {
+  width: 214px;
+  height: 39px;
+  background: #6C757D;
+}
+.card .delete-block .delete-all {
+  width: 131px;
+  height: 39px;
+  background: #DC3545;
+}/*# sourceMappingURL=style.css.map */

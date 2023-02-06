@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 4content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/checklist.png" type="image/x-icon">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>ToDo List</title>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <div class="card">
+        <div class="input-block">
+            <input class='input' type="text" placeholder="Сделать удаление завершенных и всех">
+            <button class="button-add">Добавить</button>
+            
+        </div>
+        <ul class="task-block">
+            <li class="task__item">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle__wrapper">
+                    <div class="toggle-text toggle-text-checked ">Сделать удаление каждого элемента по крестику справа
+                    </div>
+                    <img class="toggle-x" src="./images/x.svg" alt="x" srcset="">
+                </div>
+            </li>
+        </ul>
+        <div class="delete-block">
+            <button class="delete-complete">Удалить завершенные</button>
+            <button class="delete-all">Удалить все</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
