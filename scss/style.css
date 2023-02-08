@@ -71,9 +71,6 @@ h1 {
 .card .input-block .input::-moz-placeholder {
   color: #54595E;
 }
-.card .input-block .input:-ms-input-placeholder {
-  color: #54595E;
-}
 .card .input-block .input::placeholder {
   color: #54595E;
 }
