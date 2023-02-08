@@ -59,12 +59,12 @@ const deleteCompleteTasks = () => {
     card.addEventListener('click', (e)=> {
         if (e.target == delete_complete) {
             let temp = document.querySelectorAll(".task-block");
-            console.log(temp);
+            temp.forEach((el)=> {
+                if(el.firstChild.checked){
+                    el.remove();
+                }
+            });
         }
-        for (let el of temp) {
-            console.log(temp);
-        }
-        
     })
 }
     deleteCompleteTasks();
@@ -87,41 +87,29 @@ const save = () => {
         {
             const arr = [];
             localStorage.clear();
-            // const checked = listTask.querySelector('.toggle-checkbox')
-
-            console.log(listTask.children[0].childNodes[0])
-            if (listTask.children[0].childNodes[0].checked) {
-                console.log('yes')
-            } else {
-                console.log('no');
-            }
-            // listTask.children.forEach(el => {arr.push(el)});
-            console.log(listTask.children[0].childNodes[2].childNodes[1].textContent)
             for (let i=0; i<listTask.children.length; i++) {
                 if (listTask.children[i].childNodes[0].checked) {
                 arr.push(listTask.children[i].childNodes[2].childNodes[1].textContent+'toggle-text-checked');
                 } else {
                     arr.push(listTask.children[i].childNodes[2].childNodes[1].textContent);
                 }
-                console.log(arr);
             }
             localStorage.setItem('key', JSON.stringify(arr))
         }
     }
 
+    //listner fo all cases
     button.addEventListener('click', saveStorage);
     card.addEventListener('click', (e)=> {
-        if (e.target.className == 'toggle-x' || e.target == delete_all || e.target.className == 'toggle-checkbox') {
+        if (e.target.className == 'toggle-x' || e.target == delete_all || e.target.className == 'toggle-checkbox' || e.target == delete_complete) {
             saveStorage();
         }
     });
-        
 }
 save();
 
 // load storage
 const load = () => {
-    console.log(JSON.parse(localStorage.getItem('key')));
     let arr = JSON.parse(localStorage.getItem('key'));
 
     for (let i of arr) {
