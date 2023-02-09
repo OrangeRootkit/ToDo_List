@@ -8,7 +8,6 @@ const delete_block = document.querySelector('.delete-block');
 const listTask = document.querySelector('ul');
 const delete_complete = document.querySelector('.delete-complete');
 const delete_all = document.querySelector('.delete-all');
-const change = document.querySelector('.change');
 
 let arr = [];
 
