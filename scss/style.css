@@ -82,7 +82,8 @@ h1 {
 .card .task-block {
   display: flex;
   align-items: center;
-  padding: 32px 24px;
+  margin: 32px 0 32px;
+  padding: 0 24px 0;
   width: 100%;
   justify-content: space-between;
 }
@@ -106,8 +107,18 @@ h1 {
   align-items: center;
 }
 .card .task-block .toggle-text-checked {
+  padding-left: 16px;
+  width: 100%;
+  align-items: center;
   text-decoration: line-through;
   opacity: 0.5;
+}
+.card .task-block .change {
+  display: flex;
+  margin-right: 16px;
+}
+.card .task-block .change:hover {
+  cursor: pointer;
 }
 .card .task-block .toggle-x {
   display: flex;
@@ -115,6 +126,12 @@ h1 {
 }
 .card .task-block .toggle-x:hover {
   cursor: pointer;
+}
+.card .task-block .temp-input-block {
+  margin-left: 16px;
+  width: 100%;
+  align-items: center;
+  display: block;
 }
 .card .delete-block {
   display: flex;

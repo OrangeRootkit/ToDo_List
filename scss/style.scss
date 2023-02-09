@@ -88,10 +88,10 @@ h1 {
         .task-block {
             display: flex;
             align-items: center;
-            padding: 32px 24px;
+            margin: 32px 0 32px;
+            padding: 0 24px 0;
             width: 100%;
             justify-content: space-between;
-            
 
             .toggle-checkbox {
                 display: block;
@@ -117,8 +117,20 @@ h1 {
             }
 
             .toggle-text-checked {
+                padding-left: 16px;
+                width:  100%;
+                align-items: center;
                 text-decoration: line-through;
                 opacity: 0.5;
+            }
+
+            .change {
+                display: flex;
+                margin-right: 16px;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .toggle-x {
@@ -128,6 +140,14 @@ h1 {
                     cursor: pointer;
                 }
             }
+
+            .temp-input-block {
+                margin-left:  16px;
+                width:  100%;
+                align-items: center;
+                display: block;
+            }
+
         }
 
         .delete-block {
@@ -137,6 +157,8 @@ h1 {
             align-items: center;
             border-radius: 0px 0px 16px 16px;
             background-color: #F5F5F5;
+            // display: none;
+
             .delete-complete {
                 width: 214px;
                 height: 39px;
